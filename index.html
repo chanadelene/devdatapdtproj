@@ -68,13 +68,13 @@ img {
 </div>
 
 
-<hr />
+<p>====================================</p>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <ul>
 <li>The shiny app under development allows a user to enter some basic information about their vehicle, and obtain a prediction for its MPG. The app relies on a simple GLM algorithm and a data set “auto MPG” from the UCI Machine Learning Repository located <a href="http://bit.ly/1sgiKaS">here</a>.</li>
 </ul>
-<hr />
+<p>====================================</p>
 </div>
 <div id="the-algorithm" class="section level2">
 <h2>The Algorithm</h2>
@@ -86,7 +86,7 @@ modFit &lt;- train(mpg ~ cyl + disp + horse + weight + accel + year + origin, me
 <ul>
 <li>The simple GLM model has a <span class="math">\(RMSE\)</span> of 3.35, and an <span class="math">\(R^2\)</span> of 0.818. While other more complex algorithms were implemented, they yielded small improvements at the cost of much longer execution times so the GLM model was chosen as the backbone of the shiny app.</li>
 </ul>
-<hr />
+<p>====================================</p>
 </div>
 <div id="algorithm-predictions" class="section level2">
 <h2>Algorithm Predictions</h2>
@@ -95,7 +95,7 @@ modFit &lt;- train(mpg ~ cyl + disp + horse + weight + accel + year + origin, me
 <ul>
 <li>The relative 45 degree line shape of this simple plot of actual vs. predicted MPG values demonstrates the simple GLM’s decent fit.</li>
 </ul>
-<hr />
+<p>====================================</p>
 </div>
 <div id="shiny-app" class="section level2">
 <h2>Shiny App</h2>
@@ -104,10 +104,10 @@ modFit &lt;- train(mpg ~ cyl + disp + horse + weight + accel + year + origin, me
 <ul>
 <li>This is a screenshot of the deployed shiny app. It was tested and worked for various combinations of numeric inputs. It is available <a href="https://acql.shinyapps.io/devdatapdt/">here</a>.</li>
 </ul>
-<hr />
+<p>====================================</p>
 </div>
-<div id="conclusions" class="section level2">
-<h2>Conclusions</h2>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
 <ul>
 <li>This app provides a clear, easy to use and effective interface to predict the value of different vehicles’s MPG.</li>
 </ul>

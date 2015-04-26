@@ -1,20 +1,19 @@
----
-title: "App to Predict Your Vehicle MPG"
+App to Predict Your Vehicle MPG
+====================================
+
 author: "ACQL"
 date: "26 April 2015"
-output: html_document
----
 
 ====================================
 
-## Introduction
+## Page 2 - Introduction
 
 - The shiny app under development allows a user to enter some basic information about their vehicle, and obtain a prediction for its MPG.  The app relies on a simple GLM algorithm and a data set "auto MPG" from the UCI Machine Learning Repository located [here](http://bit.ly/1sgiKaS).
 
 
 ====================================
 
-## The Algorithm
+## Page 3 - The Algorithm
 
 ```r
 library(RCurl)
@@ -28,7 +27,7 @@ modFit <- train(mpg ~ cyl + disp + horse + weight + accel + year + origin, metho
 
 ====================================
 
-## Algorithm Predictions
+## Page 4 - Algorithm Predictions
 
 <a href="http://tinypic.com?ref=so8eab" target="_blank"><img src="http://i58.tinypic.com/so8eab.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
@@ -39,17 +38,10 @@ modFit <- train(mpg ~ cyl + disp + horse + weight + accel + year + origin, metho
 
 ====================================
 
-## Shiny App
+## Page 5 - Shiny App
 
 <a href="http://tinypic.com?ref=i4mm8j" target="_blank"><img src="http://i62.tinypic.com/i4mm8j.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
 ***
 - This is a screenshot of the deployed shiny app.  It was tested and worked for various combinations of numeric inputs. It is available [here](https://acql.shinyapps.io/devdatapdt/).
-
-====================================
-
-## Conclusion
-
-- This app provides a clear, easy to use and effective interface to predict the value of different vehicles's MPG.
-
 
