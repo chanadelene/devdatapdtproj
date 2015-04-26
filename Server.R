@@ -1,7 +1,7 @@
 library(shiny)
 library(RCurl)
 library(caret)
-mpg <- getURL("http://robertkevinackerman.com/wp-content/uploads/2014/08/mpg.csv")
+mpg <- getURL("goo.gl/svnu5v")
 mpg <- read.csv(text = mpg)
 modFit <- train(mpg ~ cyl + disp + horse + weight + accel + year + origin, method="glm", data=mpg)
 shinyServer(
